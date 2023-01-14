@@ -1,12 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-
-
-
-
+from perpustakaan.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('perpus/', perpus),
-    path('nama/', nama),
+    path('peminjam', peminjam),
+   
 ]
